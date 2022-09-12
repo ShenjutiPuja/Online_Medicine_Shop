@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts2/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css2/style.css">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+    <style type="text/css">
+        .auto-style1 {
+            left: 0px;
+            top: 0px;
+        }
+
+        .auto-style2 {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -5px;
+            margin-left: -5px;
+            text-align: center;
+        }
+
+        .auto-style3 {
+            width: 100%;
+            max-width: 1140px;
+            min-width: 992px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .auto-style4 {
+            left: -5px;
+            top: 0px;
+        }
+    </style>
+</head>
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+
+        <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+
+        <a class="nav-link js-scroll-trigger" href="ShowMedicine.html">Medicines</a>
+        <a class="nav-link js-scroll-trigger" href="About.html">About</a>
+        <a class="nav-link js-scroll-trigger" href="Contact.html">Contact</a>
+        <a class="nav-link js-scroll-trigger" href="faq.html">FAQ</a>
+
+        <a class="btn btn-primary" href="Signup.html">Sign up</a>
+
+    </div>
+
+</nav>
+
+<body>
+    <form action="login.php" method="POST">
+        <div class="main">
+            <!-- Sing in  Form -->
+            <section class="sign-in">
+                <div class="container">
+                    <div class="signin-content">
+                        <div class="signin-image">
+                            <figure><img src="images2/signin-image.jpg" alt="sing up image"></figure>
+                            <a href="Signup.html" class="signup-image-link">Create an account</a>
+                        </div>
+
+                        <div class="signin-form">
+                            <h2 class="form-title">User Login</h2>
+                            <form method="POST" class="register-form" id="login-form">
+                                <div class="form-group">
+                                    <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                    <input type="text" name="Username" required id="your_name" placeholder="Admin Name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                    <input type="password" name="Password"required id="your_pass" placeholder="Password" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                    <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember
+                                        me</label>
+                                </div>
+                                <div class="form-group form-button">
+                                    <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </form>
+    <!-- JS -->
+    <script src="vendor2/jquery/jquery.min.js"></script>
+    <script src="js2/main.js"></script>
+</body>
+
+</html>
